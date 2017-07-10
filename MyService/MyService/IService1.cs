@@ -20,6 +20,8 @@ namespace MyService
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         // TODO: Add your service operations here
+        [OperationContract]
+        string boolTest(bool value);
     }
 
 

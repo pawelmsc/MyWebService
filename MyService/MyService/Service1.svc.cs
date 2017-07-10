@@ -29,5 +29,24 @@ namespace MyService
             }
             return composite;
         }
+
+        public string boolTest(bool value)
+        {
+            try
+            {
+                if (value)
+                {
+                    return string.Format("True");
+                }
+                else
+                {
+                    return string.Format("False");
+                }
+            }
+            catch (Exception Ex)
+            {
+                return string.Format("Error - " + Ex.Message);
+            }
+        }
     }
 }
